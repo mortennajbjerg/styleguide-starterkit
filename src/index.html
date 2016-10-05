@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Style guide</title>
+
+  <link rel="stylesheet" href="./css/main.css">
+  <style>
+    .sg__elem{
+      margin: 0 0 50px;
+    }
+    .sg__title{
+      font-size: 30px !important;
+      margin-bottom: 50px !important;
+      padding-bottom: 0px !important;
+      position: relative;
+    }
+    .sg__title:before{
+      background: orange;
+      display: block;
+      content: "";
+      left: -15px;
+      height: 30px;
+      position: absolute;
+      top: 0;
+      width: 5px;
+    }
+    .sg__colorswatch{
+      display: inline-block;
+      font-size: 12px;
+      line-height: 100px;
+      margin: 10px;
+      height: 100px;
+      text-align: center;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="row sg__elem">
+        <h1 class="sg__title col-md-3">Colors</h1>
+        <div class="col-md-6">
+          @@include('./tpl/colors.html')
+        </div>
+    </div>
+    <!-- /.sg__elem -->
+
+    <div class="row sg__elem">
+        <h1 class="sg__title col-md-3">Typography</h1>
+        <div class="col-md-6">
+          @@include('./tpl/typography.html')
+        </div>
+    </div>
+    <!-- /.sg__elem -->
+
+    <div class="row sg__elem">
+        <h1 class="sg__title col-md-3">Forms</h1>
+        <div class="col-md-6">
+          @@include('./tpl/forms.html')
+        </div>
+    </div>
+    <!-- /.sg__elem -->
+
+    <div class="row sg__elem">
+        <h1 class="sg__title col-md-3">Lists</h1>
+        <div class="col-md-6">
+          @@include('./tpl/lists.html')
+        </div>
+    </div>
+    <!-- /.sg__elem -->
+
+    <div class="row sg__elem">
+        <h1 class="sg__title col-md-3">Buttons</h1>
+        <div class="col-md-6">
+          @@include('./tpl/buttons.html')
+        </div>
+    </div>
+    <!-- /.sg__elem -->
+
+    <div class="row sg__elem">
+        <h1 class="sg__title col-md-3">Table</h1>
+        <div class="col-md-6">
+          @@include('./tpl/table.html')
+        </div>
+    </div>
+    <!-- /.sg__elem -->
+
+  </div>
+  <!-- /.wrapper -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="./js/scripts.js"></script>
+</body>
+</html>

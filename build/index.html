@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Style guide</title>
+
+  <link rel="stylesheet" href="./css/main.css">
+  <style>
+    .sg__elem{
+      margin: 0 0 50px;
+    }
+    .sg__title{
+      font-size: 30px !important;
+      margin-bottom: 50px !important;
+      padding-bottom: 0px !important;
+      position: relative;
+    }
+    .sg__title:before{
+      background: orange;
+      display: block;
+      content: "";
+      left: -15px;
+      height: 30px;
+      position: absolute;
+      top: 0;
+      width: 5px;
+    }
+    .sg__colorswatch{
+      display: inline-block;
+      font-size: 12px;
+      line-height: 100px;
+      margin: 10px;
+      height: 100px;
+      text-align: center;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="row sg__elem">
+        <h1 class="sg__title col-md-3">Colors</h1>
+        <div class="col-md-6">
+          <div class="sg__colorswatch bg-primary">bg-primary</div>
+<div class="sg__colorswatch bg-secondary">bg-secondary</div>
+<div class="sg__colorswatch bg-tertiary">bg-tertiary</div>
+<div class="sg__colorswatch bg-success">bg-success</div>
+<div class="sg__colorswatch bg-info">bg-info</div>
+<div class="sg__colorswatch bg-warning">bg-warning</div>
+<div class="sg__colorswatch bg-danger">bg-danger</div>
+        </div>
+    </div>
+    <!-- /.sg__elem -->
+
+    <div class="row sg__elem">
+        <h1 class="sg__title col-md-3">Typography</h1>
+        <div class="col-md-6">
+          <h1>H1 Lorem ipsum dolor sit amet.</h1>
+<h2>H2 Lorem ipsum dolor sit amet.</h2>
+<h3>H3 Lorem ipsum dolor sit amet.</h3>
+<h4>H4 Lorem ipsum dolor sit amet.</h4>
+<h5>H5 Lorem ipsum dolor sit amet.</h5>
+
+<h1>H1 Lorem ipsum dolor sit amet.</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita inventore enim dolor sunt nihil reiciendis reprehenderit explicabo minus culpa quam hic ducimus ab tenetur recusandae incidunt nostrum beatae veritatis voluptatibus, amet itaque ratione ut iure debitis quasi. Veniam atque nisi consequatur laborum esse ex expedita at. Doloremque, reprehenderit ea error.</p>
+
+<h2>H2 Lorem ipsum dolor sit amet.</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita inventore enim dolor sunt nihil reiciendis reprehenderit explicabo minus culpa quam hic ducimus ab tenetur recusandae incidunt nostrum beatae veritatis voluptatibus, amet itaque ratione ut iure debitis quasi. Veniam atque nisi consequatur laborum esse ex expedita at. Doloremque, reprehenderit ea error.</p>
+
+<h3>H3 Lorem ipsum dolor sit amet.</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita inventore enim dolor sunt nihil reiciendis reprehenderit explicabo minus culpa quam hic ducimus ab tenetur recusandae incidunt nostrum beatae veritatis voluptatibus, amet itaque ratione ut iure debitis quasi. Veniam atque nisi consequatur laborum esse ex expedita at. Doloremque, reprehenderit ea error.</p>
+
+<h4>H4 Lorem ipsum dolor sit amet.</h4>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita inventore enim dolor sunt nihil reiciendis reprehenderit explicabo minus culpa quam hic ducimus ab tenetur recusandae incidunt nostrum beatae veritatis voluptatibus, amet itaque ratione ut iure debitis quasi. Veniam atque nisi consequatur laborum esse ex expedita at. Doloremque, reprehenderit ea error.</p>
+
+<h5>H5 Lorem ipsum dolor sit amet.</h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita inventore enim dolor sunt nihil reiciendis reprehenderit explicabo minus culpa quam hic ducimus ab tenetur recusandae incidunt nostrum beatae veritatis voluptatibus, amet itaque ratione ut iure debitis quasi. Veniam atque nisi consequatur laborum esse ex expedita at. Doloremque, reprehenderit ea error.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora quo cumque sunt consectetur laborum veritatis nisi minus excepturi, perferendis laudantium perspiciatis omnis quam animi vel suscipit officiis placeat, magni assumenda quaerat ut repudiandae hic quibusdam alias. Maiores, ad, non! Sequi repudiandae vel doloribus ipsum nemo. Delectus, excepturi magni error minus?</p>
+        </div>
+    </div>
+    <!-- /.sg__elem -->
+
+    <div class="row sg__elem">
+        <h1 class="sg__title col-md-3">Forms</h1>
+        <div class="col-md-6">
+          <form action="#" method="post">
+
+  <div class="form-group">
+    <label for="name">Text Input:</label>
+    <input class="form-control" type="text" name="name" id="name" value="" tabindex="1" />
+  </div>
+
+  <div class="form-group">
+    <h4>Radio Button Choice</h4>
+
+    <label for="radio-choice-1">Choice 1</label>
+    <input type="radio" name="radio-choice-1" id="radio-choice-1" tabindex="2" value="choice-1" />
+
+    <label for="radio-choice-2">Choice 2</label>
+    <input type="radio" name="radio-choice-2" id="radio-choice-2" tabindex="3" value="choice-2" />
+  </div>
+
+<div class="form-group">
+  <label for="select-choice">Select Dropdown Choice:</label>
+  <select class="form-control" name="select-choice" id="select-choice">
+    <option value="Choice 1">Choice 1</option>
+    <option value="Choice 2">Choice 2</option>
+    <option value="Choice 3">Choice 3</option>
+  </select>
+</div>
+
+  <div class="form-group">
+    <label for="textarea">Textarea:</label>
+    <textarea class="form-control" cols="40" rows="8" name="textarea" id="textarea"></textarea>
+    <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+  </div>
+
+  <div class="form-group">
+    <label for="checkbox">Checkbox:</label>
+    <input type="checkbox" name="checkbox" id="checkbox" />
+    </div>
+
+  <div class="form-group">
+    <input class="btn btn-default" type="submit" value="Submit" />
+  </div>
+
+</form>
+        </div>
+    </div>
+    <!-- /.sg__elem -->
+
+    <div class="row sg__elem">
+        <h1 class="sg__title col-md-3">Lists</h1>
+        <div class="col-md-6">
+          <ul>
+   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+   <li>Aliquam tincidunt mauris eu risus.</li>
+   <li>Vestibulum auctor dapibus neque.</li>
+</ul>
+
+<ol>
+   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+   <li>Aliquam tincidunt mauris eu risus.</li>
+   <li>Vestibulum auctor dapibus neque.</li>
+</ol>
+
+<ul>
+   <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.</li>
+   <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.</li>
+   <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.</li>
+   <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</li>
+</ul>
+
+        </div>
+    </div>
+    <!-- /.sg__elem -->
+
+    <div class="row sg__elem">
+        <h1 class="sg__title col-md-3">Buttons</h1>
+        <div class="col-md-6">
+          <!-- Standard button -->
+<button type="button" class="btn btn-default">Default</button>
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" class="btn btn-primary">Primary</button>
+
+<!-- Indicates a successful or positive action -->
+<button type="button" class="btn btn-success">Success</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type="button" class="btn btn-info">Info</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type="button" class="btn btn-warning">Warning</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type="button" class="btn btn-danger">Danger</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type="button" class="btn btn-link">Link</button>
+        </div>
+    </div>
+    <!-- /.sg__elem -->
+
+    <div class="row sg__elem">
+        <h1 class="sg__title col-md-3">Table</h1>
+        <div class="col-md-6">
+          <table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+        </div>
+    </div>
+    <!-- /.sg__elem -->
+
+  </div>
+  <!-- /.wrapper -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="./js/scripts.js"></script>
+</body>
+</html>
