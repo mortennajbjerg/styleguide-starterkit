@@ -10,6 +10,24 @@ Use this as a boilerplate for making styleguides using SASS and Bootstrap.
 * Bootstrap
 * Font Awesome
 
+## Installation
+
+Make sure You have npm and bower installed. Then from the command line execute:
+
+  npm install
+
+and
+
+  bower install
+
+After which You should be able to run the usual:
+
+  gulp
+
+and
+
+  gulp watch
+
 ## Use
 
 Adding snippets or components is easy. Just put the HTML in the *src/tpl/* folder. Then go into *src/index.html* and insert a reference to the html file and give it a title. Just see how it's done in the components that are already there. Don't worry - it's easy.
