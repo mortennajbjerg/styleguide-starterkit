@@ -12,8 +12,8 @@ Use this as a boilerplate for making styleguides using SASS and Bootstrap.
 
 ## Use
 
-Adding snippets or components is easy. Just put the HTML in the src/tpl/ folder. Then go into src/index.html and insert a reference to the html file and give it a title. Just see how it's done in the components that are already there. Don't worry - it's easy.
+Adding snippets or components is easy. Just put the HTML in the *src/tpl/* folder. Then go into *src/index.html* and insert a reference to the html file and give it a title. Just see how it's done in the components that are already there. Don't worry - it's easy.
 
 ## SASS development
 
-All styles goes into the src/scss directory. You are free to use Your own folder structure. This starterkit only comes with all the bootstrap pre-defines styles - so go nuts and create Your own styles the way You want.
+All styles goes into the *src/scss* directory. You are free to use Your own folder structure. This starterkit only comes with all the bootstrap pre-defines styles - so go nuts and create Your own styles the way You want.
