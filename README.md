@@ -14,19 +14,27 @@ Use this as a boilerplate for making styleguides using SASS and Bootstrap.
 
 Make sure You have npm and bower installed. Then from the command line execute:
 
-  npm install
+```
+npm install
+```
 
 and
 
-  bower install
+```
+bower install
+```
 
 After which You should be able to run the usual:
 
-  gulp
+```
+gulp
+```
 
 and
 
-  gulp watch
+```
+gulp watch
+```
 
 ## Use
 
