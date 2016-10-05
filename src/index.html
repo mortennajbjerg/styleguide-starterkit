@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="./css/main.css">
   <style>
     .sg__elem{
-      margin: 0 0 50px;
+      margin: 0 0 80px;
     }
     .sg__title{
       font-size: 30px !important;
+      font-weight: bold;
       margin-bottom: 50px !important;
       padding-bottom: 0px !important;
       position: relative;
@@ -25,9 +26,17 @@
       top: 0;
       width: 5px;
     }
+    .sg__header H1{
+      border-bottom: 2px solid orange;
+      font-size: 50px !important;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 100px 0;
+    }
     .sg__colorswatch{
       display: inline-block;
       font-size: 12px;
+      font-weight: bold;
       line-height: 100px;
       margin: 10px;
       height: 100px;
@@ -39,9 +48,14 @@
 <body>
   <div class="container">
 
+    <div class="sg__header">
+        <h1>Styleguide</h1>
+    </div>
+    <!-- /.sg__elem -->
+
     <div class="row sg__elem">
         <h1 class="sg__title col-md-3">Colors</h1>
-        <div class="col-md-6">
+        <div class="col-md-9">
           @@include('./tpl/colors.html')
         </div>
     </div>
@@ -49,7 +63,7 @@
 
     <div class="row sg__elem">
         <h1 class="sg__title col-md-3">Typography</h1>
-        <div class="col-md-6">
+        <div class="col-md-9">
           @@include('./tpl/typography.html')
         </div>
     </div>
@@ -57,7 +71,7 @@
 
     <div class="row sg__elem">
         <h1 class="sg__title col-md-3">Forms</h1>
-        <div class="col-md-6">
+        <div class="col-md-9">
           @@include('./tpl/forms.html')
         </div>
     </div>
@@ -65,7 +79,7 @@
 
     <div class="row sg__elem">
         <h1 class="sg__title col-md-3">Lists</h1>
-        <div class="col-md-6">
+        <div class="col-md-9">
           @@include('./tpl/lists.html')
         </div>
     </div>
@@ -73,7 +87,7 @@
 
     <div class="row sg__elem">
         <h1 class="sg__title col-md-3">Buttons</h1>
-        <div class="col-md-6">
+        <div class="col-md-9">
           @@include('./tpl/buttons.html')
         </div>
     </div>
@@ -81,8 +95,16 @@
 
     <div class="row sg__elem">
         <h1 class="sg__title col-md-3">Table</h1>
-        <div class="col-md-6">
+        <div class="col-md-9">
           @@include('./tpl/table.html')
+        </div>
+    </div>
+    <!-- /.sg__elem -->
+
+    <div class="row sg__elem">
+        <h1 class="sg__title col-md-3">Quotes</h1>
+        <div class="col-md-9">
+          @@include('./tpl/quotes.html')
         </div>
     </div>
     <!-- /.sg__elem -->

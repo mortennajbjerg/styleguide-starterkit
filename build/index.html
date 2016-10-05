@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="./css/main.css">
   <style>
     .sg__elem{
-      margin: 0 0 50px;
+      margin: 0 0 80px;
     }
     .sg__title{
       font-size: 30px !important;
+      font-weight: bold;
       margin-bottom: 50px !important;
       padding-bottom: 0px !important;
       position: relative;
@@ -25,9 +26,17 @@
       top: 0;
       width: 5px;
     }
+    .sg__header H1{
+      border-bottom: 2px solid orange;
+      font-size: 50px !important;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 100px 0;
+    }
     .sg__colorswatch{
       display: inline-block;
       font-size: 12px;
+      font-weight: bold;
       line-height: 100px;
       margin: 10px;
       height: 100px;
@@ -39,9 +48,14 @@
 <body>
   <div class="container">
 
+    <div class="sg__header">
+        <h1>Styleguide</h1>
+    </div>
+    <!-- /.sg__elem -->
+
     <div class="row sg__elem">
         <h1 class="sg__title col-md-3">Colors</h1>
-        <div class="col-md-6">
+        <div class="col-md-9">
           <div class="sg__colorswatch bg-primary">bg-primary</div>
 <div class="sg__colorswatch bg-secondary">bg-secondary</div>
 <div class="sg__colorswatch bg-tertiary">bg-tertiary</div>
@@ -55,7 +69,7 @@
 
     <div class="row sg__elem">
         <h1 class="sg__title col-md-3">Typography</h1>
-        <div class="col-md-6">
+        <div class="col-md-9">
           <h1>H1 Lorem ipsum dolor sit amet.</h1>
 <h2>H2 Lorem ipsum dolor sit amet.</h2>
 <h3>H3 Lorem ipsum dolor sit amet.</h3>
@@ -84,7 +98,7 @@
 
     <div class="row sg__elem">
         <h1 class="sg__title col-md-3">Forms</h1>
-        <div class="col-md-6">
+        <div class="col-md-9">
           <form action="#" method="post">
 
   <div class="form-group">
@@ -133,7 +147,7 @@
 
     <div class="row sg__elem">
         <h1 class="sg__title col-md-3">Lists</h1>
-        <div class="col-md-6">
+        <div class="col-md-9">
           <ul>
    <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
    <li>Aliquam tincidunt mauris eu risus.</li>
@@ -159,7 +173,7 @@
 
     <div class="row sg__elem">
         <h1 class="sg__title col-md-3">Buttons</h1>
-        <div class="col-md-6">
+        <div class="col-md-9">
           <!-- Standard button -->
 <button type="button" class="btn btn-default">Default</button>
 
@@ -186,7 +200,7 @@
 
     <div class="row sg__elem">
         <h1 class="sg__title col-md-3">Table</h1>
-        <div class="col-md-6">
+        <div class="col-md-9">
           <table>
   <tr>
     <th>Company</th>
@@ -224,6 +238,16 @@
     <td>Italy</td>
   </tr>
 </table>
+        </div>
+    </div>
+    <!-- /.sg__elem -->
+
+    <div class="row sg__elem">
+        <h1 class="sg__title col-md-3">Quotes</h1>
+        <div class="col-md-9">
+          <blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+</blockquote>
         </div>
     </div>
     <!-- /.sg__elem -->
