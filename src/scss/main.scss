@@ -6,9 +6,24 @@
 @import "bootstrap";
 @import "font-awesome";
 
-.bg-secondary{
-  background: $brand-secondary;
+.swatch-primary{
+	background: $brand-primary;
 }
-.bg-tertiary{
-  background: $brand-tertiary;
+.swatch-secondary{
+	background: $brand-primary;
+}
+.swatch-tertiary{
+	background: $brand-tertiary;
+}
+.swatch-success{
+	background: $brand-success;
+}
+.swatch-info{
+	background: $brand-info;
+}
+.swatch-warning{
+	background: $brand-warning;
+}
+.swatch-danger{
+	background: $brand-danger;
 }
