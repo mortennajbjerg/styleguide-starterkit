@@ -26,6 +26,13 @@
       top: 0;
       width: 5px;
     }
+    .sg__subtitle{
+      font-size: 20px !important;
+      font-weight: bold;
+      margin-left: -30px !important;
+      margin-bottom: 50px !important;
+      padding-bottom: 0px !important;
+    }
     .sg__header H1{
       border-bottom: 2px solid lightgray;
       font-size: 50px !important;
@@ -106,6 +113,14 @@
         <h1 class="sg__title col-md-3">Quotes</h1>
         <div class="col-md-9">
           @@include('./tpl/quotes.html')
+        </div>
+    </div>
+    <!-- /.sg__elem -->
+
+    <div class="row sg__elem">
+        <h1 class="sg__title col-md-3">Teasers</h1>
+        <div class="col-md-9">
+          @@include('./tpl/components/teasers.html')
         </div>
     </div>
     <!-- /.sg__elem -->

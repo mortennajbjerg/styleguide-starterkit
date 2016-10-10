@@ -1,0 +1,43 @@
+<h3 class="sg__subtitle">Default teaser</h3>
+<div class="row">
+
+  @@for (var i = 0; i < 6; i++) {
+    <div class="col-md-4 col-sm-6">
+      @@include('./teasers/teaser__default.html')
+    </div>
+  }
+
+</div>
+
+<h3 class="sg__subtitle">Text teaser</h3>
+<div class="row">
+
+  @@for (var i = 0; i < 3; i++) {
+    <div class="col-xs-12">
+      @@include('./teasers/teaser__text.html')
+    </div>
+  }
+
+</div>
+
+<h3 class="sg__subtitle">Media teaser</h3>
+<div class="row">
+
+  @@for (var i = 0; i < 3; i++) {
+    <div class="col-xs-12">
+      @@include('./teasers/teaser__media.html')
+    </div>
+  }
+
+</div>
+
+<h3 class="sg__subtitle">Image teaser</h3>
+<div class="row no-gutters">
+
+  @@for (var i = 0; i < 6; i++) {
+    <div class="col-md-4 col-sm-6">
+      @@include('./teasers/teaser__image.html')
+    </div>
+  }
+
+</div>

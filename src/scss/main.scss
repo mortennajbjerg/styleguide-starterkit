@@ -6,6 +6,14 @@
 @import "bootstrap";
 @import "font-awesome";
 
+// Modules
+@import "modules/animations";
+@import "modules/grid";
+@import "modules/helpers";
+
+// Components
+@import "components/teasers";
+
 .swatch-primary{
 	background: $brand-primary;
 }

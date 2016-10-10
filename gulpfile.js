@@ -9,12 +9,14 @@ var bower = require('gulp-bower');
 var plumber = require('gulp-plumber');
 
 var src_paths = {
+    img: 'src/img/',
     js: 'src/js/',
     scss: 'src/scss/',
     tpl: 'src/',
     bower: './bower_components' 
 };
 var build_paths = {
+    img: 'build/img',
     js: 'build/js/',
     scss: 'build/css/',
     tpl: 'build/'
@@ -58,6 +60,11 @@ gulp.task('bower', function() { 
          .pipe(gulp.dest(src_paths.bower)) 
 });
 
+gulp.task('images', function() { 
+    return gulp.src(src_paths.img + '*') 
+         .pipe(gulp.dest(src_paths.img)) 
+});
+
 gulp.task('icons', function() { 
     return gulp.src(src_paths.bower + '/fontawesome/fonts/**.*') 
         .pipe(plumber())
@@ -67,9 +74,10 @@ gulp.task('icons', function() { 
 gulp.task('watch', function() {
     gulp.watch(src_paths.tpl + 'index.html', ['templates']);
     gulp.watch(src_paths.tpl + '**/*.html', ['templates']);
+    gulp.watch(src_paths.img + '**', ['images']);
     gulp.watch(src_paths.js + '**/*.js', ['scripts']);
     gulp.watch(src_paths.scss + '**/*.{sass,scss}', ['sass']);
     gulp.watch(src_paths.bower + '**/*', ['bower', 'icons']);
 });
 
-gulp.task('default', ['scripts', 'sass', 'templates', 'bower', 'icons']);
+gulp.task('default', ['scripts', 'sass', 'templates', 'images', 'bower', 'icons']);

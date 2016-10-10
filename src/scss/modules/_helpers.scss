@@ -1,0 +1,11 @@
+.text-ellipsis{
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+
+.imagefix{
+  font-size: 0;
+  line-height: 0;
+  text-transform: -3000px;
+}
